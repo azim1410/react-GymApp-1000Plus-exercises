@@ -11,10 +11,10 @@ const BodyPartCard = ({item, setBodyPart, BodyPart}) => {
         borderRadius:'30px',
         marginBottom:'10px',
         border: '2px solid black',
-        borderTop: {BodyPart} === item ? '4px solid Red' : '',
+        borderTop: BodyPart === item ? '4px solid Red' : '',
         backgroundColor:'Black',
         width:'100px',
-        height:'40px',
+        height:'40px', 
         cursor:'pointer',
         
     }}
