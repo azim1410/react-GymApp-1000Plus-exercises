@@ -20,7 +20,21 @@ const SearchExercises = ({setExercises , bodyPart , setBodyPart}) => {
     fetchExercisesData();
   }, [])
 
+  
+
   const handleSearch = async () => {
+    // if (bodyParts !=''){
+    //   const exerciseData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
+    //   const searchedExercises = exerciseData.filter(
+    //     (exercise) => exercise.name.toLowerCase().includes(bodyPart)
+    //       || exercise.target.toLowerCase().includes(bodyPart)
+    //       || exercise.equipment.toLowerCase().includes(bodyPart)
+    //       || exercise.bodyPart.toLowerCase().includes(bodyPart)
+    //   );
+    //   setExercises(searchedExercises)
+
+
+    // }
     if (search) {
       const exerciseData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
 
@@ -46,11 +60,11 @@ const SearchExercises = ({setExercises , bodyPart , setBodyPart}) => {
           value={search}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
         />
-        <button className='inpbtn' type='submit' onClick={handleSearch}>search</button>
+        <button className='inpbtn' type='submit' onClick={handleSearch}>SEARCH</button>
       </div>
       <div className='Hsb'>
         <h2 className='bpl'>Examples to search from 👇</h2>
-        <HorizontalScrollbar data ={bodyParts} bodyParts={bodyParts} setBodyParts={setBodyParts}/>
+        <HorizontalScrollbar data ={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} isBodyPart/>
       </div>
     </div>
   )

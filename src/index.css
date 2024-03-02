@@ -27,6 +27,11 @@ code {
   margin-bottom: 10px;
 }
 
+.logo-link{
+  text-decoration: none;
+  color: white;
+}
+
 input{
   width: 70%;
   height: 30px;
@@ -35,13 +40,24 @@ input{
 }
 
 button{
-  
+  /* font-size: 2rem;
+  align-items: center;
+  background-color: rgb(235, 233, 233);
+  color: black;
+  border: 0px solid white;
+
+  border-radius: 20px;
+  padding: 1px ;
+  display: flex;
+  float: right; */
+  border: 0px;
   width: max-content;
   height: 2rem;
   border-radius: 10px;
   border: 0px solid;
-  color: white;
-  background-color: green;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  /* background-color: green; */
 }
 
 .header{
@@ -87,10 +103,27 @@ button{
 
 
 .exercise-card{
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-top: 10px solid red;
   color: white;
   padding: 20px;
-  border-radius: 20px;
+ 
+  border-radius: 0px 0px 20px 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btnred{
+  width: 100%;
+  gap: 10px;
+}
+
+.exercise-card img{
+  height: 330px;
 }
 
 .bodyPart-card {
@@ -112,15 +145,103 @@ button{
   border-radius: 20px;
   width: 100%;
   height: 50px;
+  
 
 }
 
+.example-card{
+  
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.vidimg{
+  width: 100%;
+}
+
 .inpbtn{
+  color: white;
   align-items: center;
   font-size: 20px;
   border-radius: 20px;
   height: 50px;
   background-color: red;
   width: 100%;
+ 
+  
 
+}
+
+.split{
+
+  font-size: 2rem;
+  align-items: center;
+  background-color: rgb(235, 233, 233);
+  color: black;
+  border: 2px solid white;
+  /* box-shadow: rgba(255, 255, 255, 0.705) 0px 5px 15px; */
+  border-radius: 20px;
+  padding: 6px;
+  display: flex;
+  float: right;
+}
+
+
+.mysplit{
+padding: 20px;
+margin: auto;
+
+  & button{
+    margin: auto;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 70px;
+    color: white;
+    border-radius: 20px;
+    font-size: 35px;
+    text-align: center;
+    background-color: rgb(252, 41, 41);
+    display: block;
+  }
+}
+
+.routine{
+  margin: auto;
+  .rhead{
+    display: flex;
+    background-color: rgb(246, 54, 54);
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    .gobackbtn{
+      background-color: #ffffff00;
+      color: white;
+      font-size: 20px;
+      float: right;
+      margin-right: 0px;
+    }
+  }
+
+  .rbody{
+    
+    padding: 10px;
+    .movement{
+      box-shadow: rgba(0, 0, 0, 0.559) 0px 5px 15px;
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.929);
+      color: white;
+      padding: 20px;
+      margin: 10px;
+      .disc{
+        margin-top: 5px;
+        background-color: #383737;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    }
+  }
 }
